@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css"; /* 
+import ParticleBackground from "./ParticleBackground";
+import Navbar from "./components/navbar"; */
+import AppLayout from "@App/core/AppLayout";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <AppLayout />
+      {/* <Navbar />
+
+      <ParticleBackground />
+      <div className="skills-content">
+        <h1 className="title">MIS HABILIDADES</h1>
+      </div>
+      <h4 className="subtitle">
+        Aquí hay algunas tecnologías con las que he estado trabajando
+        recientemente:
+      </h4> */}
+    </React.Fragment>
   );
 }
 

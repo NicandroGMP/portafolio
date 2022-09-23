@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Inconsolata", monospace;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #000;
+  color: #e6ff00;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #000;
+  height: 100px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 20%;
+  margin-left: 10px;
+}
+.vector1 {
+  background-color: #e6ff00;
+  width: 10px;
+  height: 145px;
+  margin-top: 10px solid red;
+  transform: translate(700px) rotate(30deg);
+  margin-top: -20px;
+}
+.vector2 {
+  background-color: #e6ff00;
+  width: 10px;
+  height: 145px;
+  margin-top: 10px solid red;
+  transform: translate(730px) rotate(30deg);
+  margin-top: -20px;
+}
+.content-about {
+  position: relative;
+}
+.content-particles {
+  position: relative;
+  width: 100%;
+  height: 595px;
+  background: #000;
+}
+.card-content {
+  display: grid;
+  grid-template-rows: 100px 80px 60px;
+  justify-items: center;
+  top: 10%;
+  left: 20%;
+  position: absolute;
+  z-index: 2;
+  width: 250px;
+  height: 400px;
+  background-color: #e5ff006e;
+  border-radius: 0px 30px 0px 30px;
+}
+.icons_info_view{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.card-about {
+  padding: 0px 0px 0px 50px;
+  margin: 0px;
+  top: 19%;
+  left: 36%;
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  background-color: #e5ff006e;
+  border-radius: 0px 30px 0px 30px;
+}
+.skills-content {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  margin: auto;
+  height: 50px;
+  width: 700px;
+  border-radius: 0px 30px 0px 30px;
+  background-color: #e6ff00;
 }
-
-.App-link {
-  color: #61dafb;
+.title {
+  color: #000;
+  font-family: "Inconsolata", monospace;
+  font-size: 2.5em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle {
+  text-align: center;
+}
+.text {
+  font-family: "Inconsolata", monospace;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.name-cont {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #000;
+  width: 80%;
+  height: 70px;
 }
