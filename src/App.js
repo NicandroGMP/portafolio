@@ -1,22 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css"; /* 
 import ParticleBackground from "./ParticleBackground";
 import Navbar from "./components/navbar"; */
 import AppLayout from "@App/core/AppLayout";
+import { Navbar } from "@App/core/AppLayout/Components";
+
 function App() {
   return (
     <React.Fragment>
+      <Navbar />
       <AppLayout />
-      {/* <Navbar />
-
-      <ParticleBackground />
-      <div className="skills-content">
-        <h1 className="title">MIS HABILIDADES</h1>
-      </div>
-      <h4 className="subtitle">
-        Aquí hay algunas tecnologías con las que he estado trabajando
-        recientemente:
-      </h4> */}
     </React.Fragment>
   );
 }

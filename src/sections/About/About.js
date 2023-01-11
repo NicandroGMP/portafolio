@@ -3,7 +3,7 @@ import { BackgroundParticles, InfoView } from "@App/core/AppLayout/Components";
 const About = () => {
   return (
     <>
-      <div className="content-about">
+      <div className="content-about" id="section-0">
         <BackgroundParticles />
         <InfoView />
         <div className="card-about">

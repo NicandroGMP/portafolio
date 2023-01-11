@@ -5,7 +5,7 @@ import ParticelsConfig from "@App/Utils/ParticlesConfig";
 const BackgroundParticles = () => {
   return (
     <>
-      <Particles params={ParticelsConfig} className="content-particles" />;
+      <Particles params={ParticelsConfig} className="content-particles" />
     </>
   );
 };
