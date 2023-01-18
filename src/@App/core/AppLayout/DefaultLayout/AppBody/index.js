@@ -1,12 +1,8 @@
-import PropTypes from "prop-types"; // ES6
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React from "react";
 import { About, Habilities } from "sections";
-import { Navbar } from "@App/core/AppLayout/Components";
 import { FullPage, Slide } from "react-full-page/lib";
 
 const AppBody = () => {
-  const [CurrrentPosition, SetCurrentPosition] = useState(0);
-  const [ActionScroll, SetActionScroll] = useState("Up");
   /*   const ref = useRef(null);
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -27,8 +23,6 @@ const AppBody = () => {
       window.scrollTo(0, ref.current.offsetTop);
     }
   }, [ActionScroll]); */
-
-  useEffect(() => {}, []);
   return (
     <>
       <FullPage

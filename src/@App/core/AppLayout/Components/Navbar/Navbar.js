@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import Logo from "../../../../../img/logo.svg";
-import { useNavigate, Link } from "react-router-dom";
 
-const Navbar = ({ onClick }) => {
+const Navbar = () => {
   return (
     <div className="navbar">
       <div className="content_navbar">

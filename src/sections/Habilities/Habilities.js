@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, forwardRef } from "react";
+import React, { useState, forwardRef } from "react";
 import FrontSkills from "./Components/FrontSkills";
 import BackendSkills from "./Components/BackSkills";
 
