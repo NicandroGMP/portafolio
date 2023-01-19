@@ -2,6 +2,7 @@ import React from "react";
 import { About, Habilities } from "sections";
 import { FullPage, Slide } from "react-full-page/lib";
 import PropTypes from "prop-types";
+
 class CustomControls extends React.Component {
   static propTypes = {
     className: PropTypes.string,
@@ -23,9 +24,9 @@ class CustomControls extends React.Component {
     for (let i = 0; i < slidesCount; i++) {
       const buttonProps = {
         className: `${
-          i != currentSlideIndex ? "SliderNumber" : "Active SliderNumber"
+          i !== currentSlideIndex ? "SliderNumber" : "Active SliderNumber"
         }`,
-        data_push: i != currentSlideIndex ? "" : "Active",
+        data_push: i !== currentSlideIndex ? "" : "Active",
         disabled: currentSlideIndex === i,
         key: i,
         onClick: function onClick() {
