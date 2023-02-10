@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Habilities } from "sections";
+import { About, Habilities, Projects } from "sections";
 import { FullPage, Slide } from "react-full-page/lib";
 import PropTypes from "prop-types";
 
@@ -104,7 +104,7 @@ const AppBody = () => {
           <Habilities />
         </Slide>
         <Slide>
-          <div>Nes</div>
+          <Projects />
         </Slide>
       </FullPage>
     </>
