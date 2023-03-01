@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState } from "react";
 import FrontSkills from "./Components/FrontSkills";
 import BackendSkills from "./Components/BackSkills";
 import DataBaseSkills from "./Components/DataBaseSkills";

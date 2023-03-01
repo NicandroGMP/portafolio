@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logfacebook from "../../../img/facebook-amarillo.svg";
 import logtwitter from "../../../img/logotipo-de-instagram-amarillo.svg";
 import loginstagram from "../../../img/twitter-icon-amarillo.svg";

@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Projects = () => {
   const [currentButton, setcurrentButton] = useState(1);
 
-  const [sliders, setSliders] = useState();
-  const [positions, setPositions] = useState([]);
-
   const selectCurrentButton = (currentIndex) => {
     /* const currenB = props.target.attributes[0].value;
     setcurrentButton(currenB); */
-    console.log(sliders);
     setcurrentButton(currentIndex);
   };
 
@@ -32,12 +28,6 @@ const Projects = () => {
     return array;
   };
 
-  useEffect(() => {
-    const posCards = [`${currentButton === 1 ? "item pos1" : "item pos2"}`];
-
-    setPositions(posCards);
-  }, [currentButton]);
-
   return (
     <>
       <div className="secction_projects">
@@ -49,7 +39,7 @@ const Projects = () => {
               className={`${i !== i ? "activeButton" : ""}`}
               onClick={Checked(i)}
             /> */}
-            <main id="carousel" sliders={sliders}>
+            <main id="carousel">
               <div className={"item pos" + currentButton + ""} style={{}}>
                 <div className="head__card">Proyecto Bebacalar</div>
                 <div className="body__card">

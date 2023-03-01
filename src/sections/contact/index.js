@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import useFormFields from "@App/Utils/hooks/helpForm";
 import ContactMovile from "./components/contactMovils";
 
 const Contact = () => {
-  const [activeInputField, setActiveInput] = useState(false);
-  const [fieldsVal, setFieldVal] = useState();
   const [fields, handleFieldChange, errors] = useFormFields({
     name: "",
   });
