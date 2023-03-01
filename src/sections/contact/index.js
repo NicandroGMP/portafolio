@@ -3,7 +3,7 @@ import useFormFields from "@App/Utils/hooks/helpForm";
 import ContactMovile from "./components/contactMovils";
 
 const Contact = () => {
-  const [fields, handleFieldChange, errors] = useFormFields({
+  const [fields, handleFieldChange] = useFormFields({
     name: "",
   });
   const sendEmail = (e) => {

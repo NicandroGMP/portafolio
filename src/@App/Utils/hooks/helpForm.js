@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function useFormFields(initialState) {
   const [fields, setValues] = useState(initialState);
-  const [errors, setErrors] = useState({});
+  const [errors] = useState({});
 
   return [
     fields,
