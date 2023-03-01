@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Habilities, Projects } from "sections";
+import { About, Habilities, Projects, Contact } from "sections";
 import { FullPage, Slide } from "react-full-page/lib";
 import PropTypes from "prop-types";
 
@@ -70,26 +70,6 @@ class CustomControls extends React.Component {
   }
 }
 const AppBody = () => {
-  /*   const ref = useRef(null);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  }; */
-  /*   window.onscroll = function () {
-    // Obtenemos la posicion del scroll en pantall
-    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-    SetCurrentPosition(scroll);
-    if (scroll > CurrrentPosition) {
-      SetActionScroll("Down");
-    } else {
-      SetActionScroll("Up");
-    }
-  };
-
-  useEffect(() => {
-    if (ActionScroll === "Down") {
-      window.scrollTo(0, ref.current.offsetTop);
-    }
-  }, [ActionScroll]); */
   return (
     <>
       <FullPage
@@ -105,6 +85,9 @@ const AppBody = () => {
         </Slide>
         <Slide>
           <Projects />
+        </Slide>
+        <Slide>
+          <Contact />
         </Slide>
       </FullPage>
     </>

@@ -1,8 +1,10 @@
 import React, { useState, forwardRef } from "react";
 import FrontSkills from "./Components/FrontSkills";
 import BackendSkills from "./Components/BackSkills";
+import DataBaseSkills from "./Components/DataBaseSkills";
+import OtherSkills from "./Components/OthersSkills";
 
-const Habilities = forwardRef((props, ref) => {
+const Habilities = () => {
   const [openModal, setOpenModal] = useState(false);
 
   const ModalShow = () => {
@@ -20,11 +22,11 @@ const Habilities = forwardRef((props, ref) => {
             recientemente:
           </h4>
         </div>
-        <div ref={ref} className="content_Skills content__cards_skills">
+        <div className="content_Skills content__cards_skills">
           <FrontSkills />
           <BackendSkills />
-          <BackendSkills />
-          <BackendSkills />
+          <DataBaseSkills />
+          <OtherSkills />
         </div>
         <div className="main__skills__movile">
           <button onClick={ModalShow}>
@@ -66,6 +68,6 @@ const Habilities = forwardRef((props, ref) => {
       </div>
     </>
   );
-});
+};
 
 export default Habilities;

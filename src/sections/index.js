@@ -1,3 +1,4 @@
 export { default as About } from "./About/About";
 export { default as Habilities } from "./Habilities/Habilities";
 export { default as Projects } from "./Projects/index";
+export { default as Contact } from "./contact";

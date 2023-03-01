@@ -13,7 +13,7 @@
       }
     </style>
     <clipPath id="clip-Canvas">
-      <rect width="512" height="512"/>
+      <rect class =" cls-2" width="512" height="512"/>
     </clipPath>
   </defs>
   <g id="Canvas" class="cls-1">

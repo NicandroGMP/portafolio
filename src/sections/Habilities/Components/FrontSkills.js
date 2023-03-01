@@ -98,7 +98,8 @@ const FrontSkills = () => {
             </object>
           </div>
         </div>
-        <span>{"<frontend/>"}</span>
+
+        <span>{"</frontend>"}</span>
       </div>
     </>
   );

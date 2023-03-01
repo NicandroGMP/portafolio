@@ -22,7 +22,7 @@ const Projects = () => {
           data_push={`${i !== currentButton ? null : "Active"}`}
           type="button"
           position={i}
-          className={`${i !== currentButton ? "" : "activeButton"}`}
+          className={`${i !== currentButton ? "navinput" : " activeButton"}`}
           onClick={function onClick() {
             return selectCurrentButton(i);
           }}
@@ -32,17 +32,10 @@ const Projects = () => {
     return array;
   };
 
-  const Cards = () => {
-    const cards = [];
-  };
   useEffect(() => {
     const posCards = [`${currentButton === 1 ? "item pos1" : "item pos2"}`];
 
     setPositions(posCards);
-
-    for (let i = 0; i < 6; i++) {
-      console.log(currentButton);
-    }
   }, [currentButton]);
 
   return (
@@ -50,7 +43,6 @@ const Projects = () => {
       <div className="secction_projects">
         <div className="carousel__content">
           <div className="cards__content">
-            <Checked />
             {/* <input
               type="button"
               position="1"
@@ -59,24 +51,52 @@ const Projects = () => {
             /> */}
             <main id="carousel" sliders={sliders}>
               <div className={"item pos" + currentButton + ""} style={{}}>
-                <div className="head__card">Proyecto 1</div>
+                <div className="head__card">Proyecto Bebacalar</div>
                 <div className="body__card">
-                  <div className="image_project"></div>
+                  <div className="image_project">
+                    <img
+                      src="/assets/images/ProyectBacalar.png"
+                      width={"100%"}
+                      alt=""
+                    />
+                  </div>
                   <div className="description_project">
-                    <p>lorem</p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
                 </div>
-                <div className="footer__card"></div>
+                <div className="footer__card">
+                  <a href="https://bebacalar.com">Demo</a>
+                </div>
               </div>
               <div className={"item pos" + currentButton + ""} style={{}}>
-                <div className="head__card">Proyecto 2</div>
+                <div className="head__card">Proyecto Rancherita del aire</div>
                 <div className="body__card">
-                  <div className="image_project"></div>
+                  <div className="image_project">
+                    <img
+                      src="/assets/images/ProyectoRancherita.png"
+                      width={"100%"}
+                      alt=""
+                    />
+                  </div>
                   <div className="description_project">
-                    <p>lorem</p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
                 </div>
-                <div className="footer__card"></div>
+                <div className="footer__card">
+                  <a href="https://rancherita.com.mx/">Demo</a>
+                </div>
               </div>
               <div className={"item pos" + currentButton + ""}>
                 <div className="head__card">Proyecto 3</div>
@@ -109,6 +129,9 @@ const Projects = () => {
                 <div className="footer__card"></div>
               </div>
             </main>
+            <div className="button_groups">
+              <Checked />
+            </div>
           </div>
         </div>
       </div>

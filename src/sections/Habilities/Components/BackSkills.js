@@ -4,14 +4,14 @@ const BackendSkills = () => {
   return (
     <>
       <div className="card__content__skills">
-        <span>{"<Backend>"}</span>
+        <span>{"<backend>"}</span>
         <div className="card__content__iconskills">
           <div className="img_content">
             <div className="tooltip">
-              <span className="tooltip_text">Html5</span>
+              <span className="tooltip_text">php</span>
             </div>
             <object
-              data="/assets/Icons/Html5Logo.svg"
+              data="/assets/Icons/php.svg"
               type="image/svg+xml"
               width={"50%"}
               height={"50%"}
@@ -21,84 +21,45 @@ const BackendSkills = () => {
           </div>
           <div className="img_content">
             <div className="tooltip">
-              <span className="tooltip_text">ReactJs</span>
+              <span className="tooltip_text">codeigniter &#40;php&#41;</span>
             </div>
             <object
-              data="/assets/Icons/ReactLogo.svg"
+              data="/assets/Icons/codeigniter.svg"
               type="image/svg+xml"
               width={"50%"}
               height={"50%"}
             >
-              <img src="/assets/Icons/ReactLogo.svg" alt="" />
+              <img src="/assets/Icons/codeigniter.svg" alt="" />
             </object>
           </div>
           <div className="img_content">
             <div className="tooltip">
-              <span className="tooltip_text">Css</span>
+              <span className="tooltip_text">Laravel &#40;php&#41;</span>
             </div>
             <object
-              data="/assets/Icons/CssLogo.svg"
+              data="/assets/Icons/laravel.svg"
               type="image/svg+xml"
               width={"50%"}
               height={"50%"}
             >
-              <img src="/assets/Icons/CssLogo.svg" alt="" />
+              <img src="/assets/Icons/laravel.svg" alt="" />
             </object>
           </div>
           <div className="img_content">
             <div className="tooltip">
-              <span className="tooltip_text">Sass</span>
+              <span className="tooltip_text">Nodejs</span>
             </div>
             <object
-              data="/assets/Icons/SassLogo.svg"
+              data="/assets/Icons/nodejs.svg"
               type="image/svg+xml"
               width={"50%"}
               height={"50%"}
             >
-              <img src="/assets/Icons/SassLogo.svg" alt="" />
-            </object>
-          </div>
-          <div className="img_content">
-            <div className="tooltip">
-              <span className="tooltip_text">JavaScript</span>
-            </div>
-            <object
-              data="/assets/Icons/JsLogo.svg"
-              type="image/svg+xml"
-              width={"50%"}
-              height={"50%"}
-            >
-              <img src="/assets/Icons/JsLogo.svg" alt="" />
-            </object>
-          </div>
-          <div className="img_content">
-            <div className="tooltip">
-              <span className="tooltip_text">Bootstrap</span>
-            </div>
-            <object
-              data="/assets/Icons/BootstrapLogo.svg"
-              type="image/svg+xml"
-              width={"50%"}
-              height={"50%"}
-            >
-              <img src="/assets/Icons/BootstrapLogo.svg" alt="" />
-            </object>
-          </div>
-          <div className="img_content">
-            <div className="tooltip">
-              <span className="tooltip_text">Bulma Css</span>
-            </div>
-            <object
-              data="/assets/Icons/BulmaCssLogo.svg"
-              type="image/svg+xml"
-              width={"50%"}
-              height={"50%"}
-            >
-              <img src="/assets/Icons/BulmaCssLogo.svg" alt="" />
+              <img src="/assets/Icons/nodejs.svg" alt="" />
             </object>
           </div>
         </div>
-        <span>{"<Backend/>"}</span>
+        <span>{"</backend>"}</span>
       </div>
     </>
   );
