@@ -12,7 +12,7 @@ const InfoView = () => {
       <div className="name-cont">
         <h4>Nicandro Gamaliel Martínez Pérez</h4>
       </div>
-      <h4 className="text">Desarrollador Web</h4>
+      <h4 className="text">Programador Jr</h4>
       <div className="social_list">
         <i className="fa fas-circle icons_info_view">
           <img src={logfacebook} alt="log-facebook"></img>
