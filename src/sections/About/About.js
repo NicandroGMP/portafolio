@@ -8,8 +8,11 @@ const About = () => {
         <InfoView />
         <div className="card-about">
           <h1 className="title">SOBRE MÍ</h1>
-          <p className="text">
-            here are two spaces between these&nbsp;&nbsp;words.
+          <p className="text_aboutme">
+            Freelancer de nacionalidad mexicana. Con experiencia en desarrollo
+            web, apasiondo de la programacion, constantemente adaptándome a las
+            nuevas tecnologías que abarcan el mundo del desarrollo web. Mi meta
+            es ser un programador fullStack.
           </p>
         </div>
       </div>

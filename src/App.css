@@ -87,7 +87,17 @@ html {
   height: 100vh;
   background: #000;
 }
+.content_downloader{
+  width: 70%;
+}
 
+.button__downloader{
+  background-color: #000;
+  color: #e6ff00;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
 .card-content {
   display: grid;
   grid-template-rows: 100px 80px 60px;
@@ -154,7 +164,8 @@ flex-direction: column;
 .subtitle {
   text-align: center;
 }
-.text {
+.text_aboutme {
+  margin-top: 20px;
   font-family: "Inconsolata", monospace;
   color: #000;
   font-weight: 700;
@@ -166,7 +177,16 @@ flex-direction: column;
   background-color: #000;
   width: 80%;
   height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
+.profesion{
+  color: #000;
+  margin-top: 10px;
+}
+
 .skills__main{
 display: flex;
 flex-direction: column;
@@ -543,8 +563,11 @@ input:nth-of-type(5) {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   margin-bottom: 2px;
+}
+.description_project > p{
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 .body__card{
   background-color: #3838383d;

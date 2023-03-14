@@ -12,17 +12,13 @@ const InfoView = () => {
       <div className="name-cont">
         <h4>Nicandro Gamaliel Martínez Pérez</h4>
       </div>
-      <h4 className="text">Programador Jr</h4>
-      <div className="social_list">
-        <i className="fa fas-circle icons_info_view">
-          <img src={logfacebook} alt="log-facebook"></img>
-        </i>
-        <i className="fa fas-circle icons_info_view">
-          <img src={logtwitter} alt="log-facebook"></img>
-        </i>
-        <i className="fa fas-circle icons_info_view">
-          <img src={loginstagram} alt="log-facebook"></img>
-        </i>
+      <h4 className="profesion">Programador Jr</h4>
+      <div className="content_downloader">
+        <a href="/assets/pdf/CV2023.pdf" download="CV2023.pdf">
+          <button type="button" className="button__downloader">
+            Descargar CV
+          </button>
+        </a>
       </div>
     </div>
   );

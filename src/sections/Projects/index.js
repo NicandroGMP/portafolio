@@ -52,16 +52,19 @@ const Projects = () => {
                   </div>
                   <div className="description_project">
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
+                      Creación de landing page para inmobiliaria Bebacalar,
+                      utilizando las tecnologias de HTML, CSS, JS.
                     </p>
                   </div>
                 </div>
                 <div className="footer__card">
-                  <a href="https://bebacalar.com">Demo</a>
+                  <a
+                    href="https://bebacalar.herokuapp.com/"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                  >
+                    Demo
+                  </a>
                 </div>
               </div>
               <div className={"item pos" + currentButton + ""} style={{}}>
@@ -76,27 +79,52 @@ const Projects = () => {
                   </div>
                   <div className="description_project">
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
+                      Desarrollo de sitio de noticias se realizo la Maquetacion
+                      y consumo de API, empleando las siguientes tecnologias,
+                      HTML, CSS, Javascript y Codeigniter 4.
                     </p>
                   </div>
                 </div>
                 <div className="footer__card">
-                  <a href="https://rancherita.com.mx/">Demo</a>
+                  <a
+                    href="https://rancherita.com.mx/"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                  >
+                    Demo
+                  </a>
                 </div>
               </div>
               <div className={"item pos" + currentButton + ""}>
-                <div className="head__card">Proyecto 3</div>
+                <div className="head__card">Proyecto Cabo Norte</div>
                 <div className="body__card">
-                  <div className="image_project"></div>
+                  <div className="image_project">
+                    <img
+                      src="/assets/images/ProyectoCabo.png"
+                      width={"100%"}
+                      alt=""
+                    />
+                  </div>
                   <div className="description_project">
-                    <p>lorem</p>
+                    <p>
+                      Desarrollo de crm, registro, control de entradas y salidas
+                      de trabajadores y proveedores con scanner Qr. Emplando las
+                      siguientes tecnologias, Frontend: React js y MUI. Backend
+                      php(codeigniter 4) para la implentacion de la API, mysql
+                      para la base de datos
+                    </p>
                   </div>
                 </div>
-                <div className="footer__card"></div>
+                <div className="footer__card">
+                  {" "}
+                  <a
+                    href="https://cabo-norte.vercel.app"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                  >
+                    Demo
+                  </a>
+                </div>
               </div>
               <div className={"item pos" + currentButton + ""}>
                 <div className="head__card">Proyecto 4</div>
