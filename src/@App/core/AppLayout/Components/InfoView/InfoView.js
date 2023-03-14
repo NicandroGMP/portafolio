@@ -1,4 +1,5 @@
 import React from "react";
+import profile from "../../../../../img/profile.png";
 const InfoView = () => {
   return (
     <div className="card-content">
