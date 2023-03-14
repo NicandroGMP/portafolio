@@ -1,8 +1,4 @@
 import React from "react";
-import profile from "../../../../../img/profile.png";
-import logfacebook from "../../../../../img/facebook-amarillo.svg";
-import logtwitter from "../../../../../img/logotipo-de-instagram-amarillo.svg";
-import loginstagram from "../../../../../img/twitter-icon-amarillo.svg";
 const InfoView = () => {
   return (
     <div className="card-content">
