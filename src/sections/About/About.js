@@ -10,7 +10,7 @@ const About = () => {
           <h1 className="title">SOBRE MÍ</h1>
           <p className="text_aboutme">
             Freelancer de nacionalidad mexicana. Con experiencia en desarrollo
-            web, apasiondo de la programacion, constantemente adaptándome a las
+            web, apasionado de la programacion, constantemente adaptándome a las
             nuevas tecnologías que abarcan el mundo del desarrollo web. Mi meta
             es ser un programador fullStack.
           </p>

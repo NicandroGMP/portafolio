@@ -1,10 +1,9 @@
 import React from "react";
-import profile from "../../../../../img/profile.png";
 const InfoView = () => {
   return (
     <div className="card-content">
-      <div>
-        <img width="100" src={profile} alt="profile"></img>
+      <div className="content_profile_image">
+        <img width="100" src={"/assets/images/profile.jpg"} alt="profile"></img>
       </div>
       <div className="name-cont">
         <h4>Nicandro Gamaliel Martínez Pérez</h4>
@@ -17,6 +16,12 @@ const InfoView = () => {
           </button>
         </a>
       </div>
+      <p className="text_aboutme_movile">
+        Freelancer de nacionalidad mexicana. Con experiencia en desarrollo web,
+        apasionado de la programacion, constantemente adaptándome a las nuevas
+        tecnologías que abarcan el mundo del desarrollo web. Mi meta es ser un
+        programador fullStack.
+      </p>
     </div>
   );
 };

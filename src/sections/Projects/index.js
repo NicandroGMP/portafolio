@@ -131,7 +131,7 @@ const Projects = () => {
                 <div className="body__card">
                   <div className="image_project"></div>
                   <div className="description_project">
-                    <p>lorem</p>
+                    <p>subiendo Proyectos...</p>
                   </div>
                 </div>
                 <div className="footer__card"></div>
@@ -141,7 +141,7 @@ const Projects = () => {
                 <div className="body__card">
                   <div className="image_project"></div>
                   <div className="description_project">
-                    <p>lorem</p>
+                    <p>subiendo Proyectos...</p>
                   </div>
                 </div>
                 <div className="footer__card"></div>
