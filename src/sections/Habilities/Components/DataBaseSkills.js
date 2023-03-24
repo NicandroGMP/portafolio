@@ -4,7 +4,7 @@ const DataBaseSkills = () => {
   return (
     <>
       <div className="card__content__skills">
-        <span>{"<dataBases>"}</span>
+        <span className="tags_elements_desktop">{"<dataBases>"}</span>
         <div className="card__content__iconskills">
           <div className="img_content">
             <div className="tooltip">
@@ -33,7 +33,7 @@ const DataBaseSkills = () => {
             </object>
           </div>
         </div>
-        <span>{"</dataBases>"}</span>
+        <span className="tags_elements_desktop">{"</dataBases>"}</span>
       </div>
     </>
   );

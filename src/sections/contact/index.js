@@ -2,11 +2,13 @@ import React, { useRef, useState } from "react";
 import ContactMovile from "./components/contactMovils";
 import { Formik, Form } from "formik";
 import emailjs from "@emailjs/browser";
+
 const Contact = () => {
   const form = useRef();
   const [messageSuccesfully, getMessageSuccesfully] = useState("");
   const [textState, getTextState] = useState("Enviar");
   const [openSpinner, getOpenSpinner] = useState(false);
+
   const sendEmail = () => {
     getTextState("Enviando");
     getOpenSpinner(true);
@@ -24,7 +26,7 @@ const Contact = () => {
           getOpenSpinner(false);
         },
         () => {
-          getMessageSuccesfully("Algo salió mal");
+          getMessageSuccesfully("Algo salió mal :(");
           getTextState("Enviar");
           getOpenSpinner(false);
         }
@@ -47,21 +49,22 @@ const Contact = () => {
               validate={(values) => {
                 const errors = {};
                 if (!values.name) {
-                  errors.name = "Your name is Required";
+                  errors.name = "Este campo no puede quedar vacio ";
                 }
 
                 if (!values.email) {
-                  errors.email = "Your email is required";
+                  errors.email = "Este campo no puede quedar vacio ";
                 } else if (
                   !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                 ) {
-                  errors.email = "email invalid address";
+                  errors.email = "Email invalido";
                 }
 
                 if (!values.telephone) {
-                  errors.telephone = "Your telephone number is Required";
+                  errors.telephone = "Este campo no puede quedar vacio ";
                 } else if (!/^[0-9]+$/i.test(values.telephone)) {
-                  errors.telephone = "telephone invalid";
+                  errors.telephone =
+                    "Numero de teléfono invalido solo debe contener numeros";
                 }
 
                 return errors;

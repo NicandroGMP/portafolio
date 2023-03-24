@@ -6,10 +6,14 @@ import OtherSkills from "./Components/OthersSkills";
 
 const Habilities = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [showSkills, getShowSkills] = useState(null);
+  const ModalSkills = ["Frontend", "Backend", "DB", "Other"];
 
-  const ModalShow = () => {
+  const ModalShow = (s) => {
+    getShowSkills(s);
     setOpenModal(true);
   };
+
   return (
     <>
       <div className="skills__main">
@@ -29,18 +33,19 @@ const Habilities = () => {
           <OtherSkills />
         </div>
         <div className="main__skills__movile">
-          <button onClick={ModalShow}>
-            <span>{"<Frontend/>"}</span>
-          </button>
-          <button>
-            <span>{"<Backend/>"}</span>
-          </button>
-          <button>
-            <span>{"<DB/>"}</span>
-          </button>
-          <button>
-            <span>{"<Other/>"}</span>
-          </button>
+          {ModalSkills.map((skills) => {
+            return (
+              <>
+                <button
+                  onClick={() => {
+                    ModalShow(skills);
+                  }}
+                >
+                  <span>{"<" + skills + "/>"}</span>
+                </button>
+              </>
+            );
+          })}
         </div>
       </div>
 
@@ -58,12 +63,17 @@ const Habilities = () => {
         ></div>
         <div className="modal__Content">
           <div className="modal__header">
-            <span>{"<Frontend/>"}</span>
+            <span>{"<frontend>"}</span>
           </div>
           <div className="modal__body">
-            <FrontSkills />
+            {showSkills === "Frontend" && <FrontSkills />}
+            {showSkills === "Backend" && <BackendSkills />}
+            {showSkills === "DB" && <DataBaseSkills />}
+            {showSkills === "Other" && <OtherSkills />}
           </div>
-          <div className="modal__footer">footer</div>
+          <div className="modal__footer">
+            <span>{"</frontend>"}</span>
+          </div>
         </div>
       </div>
     </>

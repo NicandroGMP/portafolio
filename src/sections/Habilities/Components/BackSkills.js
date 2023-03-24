@@ -4,7 +4,7 @@ const BackendSkills = () => {
   return (
     <>
       <div className="card__content__skills">
-        <span>{"<backend>"}</span>
+        <span className="tags_elements_desktop">{"<backend>"}</span>
         <div className="card__content__iconskills">
           <div className="img_content">
             <div className="tooltip">
@@ -59,7 +59,7 @@ const BackendSkills = () => {
             </object>
           </div>
         </div>
-        <span>{"</backend>"}</span>
+        <span className="tags_elements_desktop">{"</backend>"}</span>
       </div>
     </>
   );

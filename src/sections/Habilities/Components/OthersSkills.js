@@ -4,7 +4,7 @@ const OtherSkills = () => {
   return (
     <>
       <div className="card__content__skills">
-        <span>{"<otherSkills>"}</span>
+        <span className="tags_elements_desktop">{"<otherSkills>"}</span>
         <div className="card__content__iconskills">
           <div className="img_content">
             <div className="tooltip">
@@ -59,7 +59,7 @@ const OtherSkills = () => {
             </object>
           </div>
         </div>
-        <span>{"</otherSkills>"}</span>
+        <span className="tags_elements_desktop">{"</otherSkills>"}</span>
       </div>
     </>
   );

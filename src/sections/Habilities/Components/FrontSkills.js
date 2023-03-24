@@ -4,7 +4,7 @@ const FrontSkills = () => {
   return (
     <>
       <div className="card__content__skills">
-        <span>{"<frontend>"}</span>
+        <span className="tags_elements_desktop">{"<frontend>"}</span>
         <div className="card__content__iconskills">
           <div className="img_content">
             <div className="tooltip">
@@ -98,8 +98,7 @@ const FrontSkills = () => {
             </object>
           </div>
         </div>
-
-        <span>{"</frontend>"}</span>
+        <span className="tags_elements_desktop">{"<frontend>"}</span>
       </div>
     </>
   );
